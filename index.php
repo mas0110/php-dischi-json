@@ -3,7 +3,7 @@
 ?>
 
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-bs-theme="dark">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -15,12 +15,15 @@
     rel="stylesheet" 
     integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" 
     crossorigin="anonymous">
+
+    <link rel="stylesheet" href="./src/styles/style.css">
 </head>
 <body>
 
 
 <div id="app">
-
+    <?php include './src/components/header.php' ?>
+    <?php include './src/components/main.php' ?>
 </div>
 
 
