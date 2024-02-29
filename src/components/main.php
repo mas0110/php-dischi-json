@@ -1,13 +1,13 @@
-<main class="">
+<main>
     <div class="container">
         <div class="row">
-            <div class="col-4">
-                <div class="card text-center" style="width: 18rem;">
-                  <img src="..." class="card-img-top" alt="...">
+            <div v-for="(element, index) in dischi" :key="index" class="col-4 pb-3">
+                <div class="card text-center" style="width: 14rem;">
+                  <img :src="element.poster" class="card-img-top" alt="...">
                   <div class="card-body">
-                        <h5 class="card-title">Card title</h5>
-                        <p class="card-text"></p>
-                        <p class="card-text"></p>
+                        <h5 class="card-title">{{ element.title }}</h5>
+                        <p class="card-text">{{ element.author }}</p>
+                        <p class="card-text">{{ element.year }}</p>
                   </div>
                 </div>
             </div>

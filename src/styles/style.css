@@ -10,3 +10,7 @@ main{
 .card{
     background-color: #102030;
 }
+
+#app{
+    height: 100vh;
+}
